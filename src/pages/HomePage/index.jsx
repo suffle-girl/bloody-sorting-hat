@@ -1,22 +1,24 @@
-import './style.css';
+import "./style.css";
 
 export const HomePage = () => {
   return (
     <div className="container">
       <header>
         <div className="logo" />
-        <h1>React webová aplikace</h1>
+        <h1>Bloody Sortin' Hat</h1>
       </header>
       <main>
+        <h2>Welcome, Stranger, to the Bloody Sortin' Hat!</h2>
         <p>
-          Startovací šablona pro webovou aplikaci v Reactu. Vytvořeno pomocí
-          {" "}
-          <a href="https://www.npmjs.com/package/create-czechitas-app">create-czechitas-app</a>
-          .
+          A place of wonders and magic for everyone in love with the world of
+          the witches and wizards.
         </p>
       </main>
       <footer>
-        <p>Czechitas, Digitální akademie: Web</p>
+        <p>
+          J.K. ROWLING'S WIZARDING WORLD is a trademark of J.K. Rowling and
+          Warner Bros.
+        </p>
       </footer>
     </div>
   );
