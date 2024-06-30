@@ -1,10 +1,16 @@
+import "./style.css";
+
 export const Navbar = () => {
   return (
-    <ul>
-      <li>Zde je navbar</li>
-      <li>Zde je navbar</li>
-      <li>Zde je navbar</li>
-      <li>Zde je navbar</li>
-    </ul>
+    <div className="container-navbar">
+      <nav className="navbar">
+        <ul className="navbar__menu">
+          <li className="navbar__menu--item">Navbar Item</li>
+          <li className="navbar__menu--item">Navbar Item</li>
+          <li className="navbar__menu--item">Navbar Item</li>
+          <li className="navbar__menu--item">Navbar Item</li>
+        </ul>
+      </nav>
+    </div>
   );
 };

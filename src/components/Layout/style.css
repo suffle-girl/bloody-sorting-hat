@@ -5,3 +5,7 @@
   justify-content: space-between;
   min-height: 100svh;
 }
+
+.layout__navbar {
+  width: 100%;
+}

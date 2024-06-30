@@ -1,0 +1,10 @@
+.navbar__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar__menu--item {
+  list-style: none;
+  text-decoration: none;
+}
