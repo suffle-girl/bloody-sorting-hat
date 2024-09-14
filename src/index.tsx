@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { HomePage } from "./pages/HomePage";
-import "./global.css";
+import "./global.less";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Suspense } from "react";
 import { Layout } from "./components/Layout";

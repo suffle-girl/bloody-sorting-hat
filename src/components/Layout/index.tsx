@@ -1,6 +1,6 @@
 import { Footer } from "../Footer";
 import { Navbar } from "../Navbar";
-import { ReactNode} from "react";
+import { ReactNode } from "react";
 import styles from "./style.module.less";
 
 interface Props {
