@@ -1,7 +1,7 @@
 import { Footer } from "../Footer";
 import { Navbar } from "../Navbar";
 import { ReactNode} from "react";
-import "./style.css";
+import styles from "./style.module.less";
 
 interface Props {
   children: ReactNode;
@@ -9,12 +9,12 @@ interface Props {
 
 export const Layout = ({ children }: Props): JSX.Element => {
   return (
-    <div className="layout">
-      <div className="layout__navbar">
+    <div className={styles.layout}>
+      <div className={styles.navbar}>
         <Navbar />
       </div>
-      <div className="layout__content">{children}</div>
-      <div className="layout__footer">
+      <div className={styles.content}>{children}</div>
+      <div className={styles.footer}>
         <Footer />
       </div>
     </div>

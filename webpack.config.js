@@ -34,6 +34,14 @@ module.exports = {
           filename: 'img/[name]-[contenthash:8][ext]',
         },
       },
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',  // Injects styles into the DOM
+          'css-loader',    // Translates CSS into CommonJS
+          'less-loader',   // Compiles Less to CSS
+        ],
+      },
     ],
   },
   devServer: {
