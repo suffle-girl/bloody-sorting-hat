@@ -1,6 +1,6 @@
 import "./style.css";
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
   return (
     <footer>
       <p>

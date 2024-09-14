@@ -1,6 +1,6 @@
 import "./style.css";
 
-export const HomePage = () => {
+export const HomePage = (): JSX.Element => {
   return (
     <div className="container">
       <header>

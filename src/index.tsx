@@ -5,7 +5,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Suspense } from "react";
 import { Layout } from "./components/Layout";
 
-export const App = () => {
+export const App = (): JSX.Element => {
   return (
     <Suspense fallback="loading">
       <Layout>
@@ -28,6 +28,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.querySelector("#app")).render(
+createRoot(document.querySelector("#app")!).render(
   <RouterProvider router={router} />
 );

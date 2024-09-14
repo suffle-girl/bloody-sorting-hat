@@ -1,6 +1,6 @@
 import "./style.css";
 
-export const Navbar = () => {
+export const Navbar = (): JSX.Element => {
   return (
     <div className="container-navbar">
       <nav className="navbar">
