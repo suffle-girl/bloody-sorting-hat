@@ -22,10 +22,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -35,12 +32,24 @@ module.exports = {
         },
       },
       {
-        test: /\.less$/,
+        test: /\.module\.less$/,
         use: [
-          'style-loader',  // Injects styles into the DOM
-          'css-loader',    // Translates CSS into CommonJS
-          'less-loader',   // Compiles Less to CSS
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[local]_[hash:base64:10]',
+              },
+            },
+          },
+          'less-loader',
         ],
+      },
+      {
+        test: /\.less$/,
+        exclude: /\.module\.less$/,
+        use: ['style-loader', 'css-loader', 'less-loader'],
       },
     ],
   },
@@ -57,12 +66,10 @@ module.exports = {
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.css'
+      filename: 'styles.css',
     }),
     new CopyPlugin({
-      patterns: [
-        { from: 'public', to: '', noErrorOnMissing: true },
-      ],
+      patterns: [{ from: 'public', to: '', noErrorOnMissing: true }],
     }),
   ],
 };
