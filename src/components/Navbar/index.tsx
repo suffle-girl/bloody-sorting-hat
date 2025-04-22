@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import styles from './style.module.less';
+import { Link } from "react-router-dom";
+import styles from "./style.module.less";
 
 export const Navbar = (): JSX.Element => {
   return (
@@ -8,17 +8,17 @@ export const Navbar = (): JSX.Element => {
         <div className={styles.logo}></div>
       </Link>
 
-      <ul className={styles.menu}>
-        <li className={styles.menuItem}>
+      <ul className={styles.navbarMenu}>
+        <li className={styles.navbarMenu_Item}>
           <Link to="/">Blog</Link>
         </li>
-        <li className={styles.menuItem}>
+        <li className={styles.navbarMenu_Item}>
           <Link to="/">People</Link>
         </li>
-        <li className={styles.menuItem}>
+        <li className={styles.navbarMenu_Item}>
           <Link to="/">Spells</Link>
         </li>
-        <li className={styles.menuItem}>
+        <li className={styles.navbarMenu_Item}>
           <Link to="/">Potions</Link>
         </li>
       </ul>

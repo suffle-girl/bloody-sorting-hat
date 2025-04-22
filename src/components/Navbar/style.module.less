@@ -2,6 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &Menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+
+    &_Item {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: var(--french-gray);
+      }
+    }
+  }
 }
 
 .logo {
@@ -11,19 +26,4 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin: 1rem 1rem 0;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 60%;
-}
-
-.menuItem {
-  list-style: none;
-  a {
-    text-decoration: none;
-    color: var(--french-gray);
-  }
 }
